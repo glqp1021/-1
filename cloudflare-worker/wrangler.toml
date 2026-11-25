@@ -1,0 +1,9 @@
+name = "relayswitch-sync"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# 部署前先运行：npx wrangler kv namespace create RELAY_KV
+# 然后将返回的 id 填到下方
+[[kv_namespaces]]
+binding = "RELAY_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
